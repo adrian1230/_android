@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ifbooth.ifbooth_android">
+    <uses-permission android:name = "android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ifbooth"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IFBooth_android">
+        <activity android:name=".LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity">
+        </activity>
+        <activity android:noHistory = "true" android:name=".HomeActivity">
+        </activity>
+        <activity android:noHistory = "true" android:name=".ProfileActivity">
+        </activity>
+    </application>
+
+</manifest>

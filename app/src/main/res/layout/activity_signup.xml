@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1F1">
+
+    <EditText
+        android:id="@+id/NewUserName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <EditText
+        android:id="@+id/NewUserEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUserName"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserName" />
+
+    <EditText
+        android:id="@+id/NewUserFullName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserEmail" />
+
+    <EditText
+        android:id="@+id/NewUserPhone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserFullName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUserFullName"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserFullName" />
+
+    <EditText
+        android:id="@+id/NewUserPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUserPhone"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserPhone" />
+
+    <EditText
+        android:id="@+id/NewUserConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_text_field"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NewUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserPassword" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/black"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/NewUserConfirmPassword"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/NewUserConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/NewUserConfirmPassword" />
+
+    <TextView
+        android:id="@+id/GotAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Already Got A Cart?"
+        app:layout_constraintEnd_toEndOf="@+id/Register"
+        app:layout_constraintStart_toStartOf="@+id/Register"
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
+</androidx.constraintlayout.widget.ConstraintLayout>
