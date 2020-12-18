@@ -1,4 +1,4 @@
-package com.ifbooth.ifbooth_android
+package com._android
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
