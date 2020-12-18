@@ -1,4 +1,4 @@
-package com.ifbooth.ifbooth_android
+package com._android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
