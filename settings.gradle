@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "IFBooth_android"
+rootProject.name = "_android"
